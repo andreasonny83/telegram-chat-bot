@@ -53,7 +53,6 @@ function promptUser(bot: TelegramBot, chatId: number) {
       // Process the user input
       try {
         await bot.sendMessage(chatId, input);
-        console.log('Message delivered');
       } catch (err: any) {
         console.error('[ERROR]', err?.message);
       }
